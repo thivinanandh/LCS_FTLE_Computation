@@ -1,0 +1,20 @@
+from scipy.interpolate import griddata
+points = np.array( (gridX.flatten(), gridY.flatten()) ).T
+print(points)
+values = np.array( (Solx.flatten(), Soly.flatten()) ).T
+print(values)
+Z0 = griddata( points, values, (0.25,0.25) )
+print(Z0)
+
+    # print("Updaetd Disp" , i)
+    # print(" Diff norm : ", np.linalg.norm(Particle_X - Particle_X_old , 2) )
+    # print(" Diff norm Y : ", np.linalg.norm(Particle_Y - Particle_Y_old , 2) )
+    # ax.contourf(gridX,gridY,np.sqrt(MainSolutionArray_u[i]**2 + MainSolutionArray_v[i]**2 ), cmap='RdYlBu',alpha=0.5)
+    # ax.streamplot(gridX,gridY,MainSolutionArray_u[i],MainSolutionArray_v[i],density = 0.65,integration_direction='both',color='black')
+    # ax.scatter(Particle_X,Particle_Y,color="black",s=5);
+    # ax.set_xlim([0,2])
+    # ax.set_ylim([0,1])
+    # filename = "scatter_" + str(i) + ".png";
+    # camera.snap();
+    # plt.draw();
+    # plt.show();
